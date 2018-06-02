@@ -1,6 +1,15 @@
+:root {
+  --bg-color: #a67b5b;
+  --white: #ffffff;
+  --orange: #ff8000;
+}
+
 body {
   font-family: "Chelsea Market", cursive;
-  background-color: rgb(102, 51, 0, 0.4);
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #title, #description {
@@ -11,6 +20,10 @@ body {
 footer {
   text-align: center;
   font-size: 0.75em;
+}
+
+.section {
+  margin-bottom: 10px;
 }
 
 .container {
@@ -24,16 +37,17 @@ footer {
 }
 
 #name, #email, #number, #dropdown {
-  min-width: 200px;
+  width: 200px;
   padding: 5px;
   border-radius: 8px;
-  border-color: rgb(102, 51, 0, 0.4);
+  border-color: var(--bg-color);
+  box-sizing: border-box;
 }
 
 #comment {
   width: 95%;
   border-radius: 8px;
-  border-color: rgb(102, 51, 0, 0.4);
+  border-color: var(--bg-color);
 }
 
 #submit {
@@ -45,9 +59,35 @@ footer {
   margin-top: 10px;
   font-family: "Chelsea Market", cursive;
   font-size: 1.25em;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
 }
 
 #submit:hover, #submit:active {
-  background-color: rgb(255, 128, 0);
+  background-color: var(--orange);
+}
+
+@media (min-width: 600px) {
+  .section {
+    display: flex;
+    width: 100%;
+  }
+  .labels, .responses {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    z-index: 1;
+  }
+  body {
+    background: url("../img/bg_img.jpg") repeat, var(--bg-color);
+  }
+  .labels {
+    padding-right: 10px;
+  }
 }

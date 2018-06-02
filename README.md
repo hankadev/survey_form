@@ -1,6 +1,10 @@
 # Survey Form page
 This is my implementation of [Free Code Camp's](https://www.freecodecamp.org/) Survey From project.
 
+Project is build using HTML, CSS. Responsiveness is achieved by media queries and Flexbox.
+
+[view in browser](https://hanny21.github.io/survey_form/)
+
 ## Objective
 Built an app that is functionally similar to [this](https://codepen.io/freeCodeCamp/full/VPaoNP/).
 Fulfill the below user stories. Give it your own personal style.
@@ -25,3 +29,4 @@ User stories:
 
 ## Dependencies
 Web browser: Google Chrome (recommended), Mozilla Firefox
+Background image designed by [freepik](https://www.freepik.com/free-vector/coffee-elements-pattern_857155.htm)
