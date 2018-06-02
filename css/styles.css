@@ -79,7 +79,7 @@ footer {
 @media (min-width: 700px) {
   .container {
     width: 700px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background-color: var(--bg-color);
     z-index: 1;
