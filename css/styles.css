@@ -1,0 +1,53 @@
+body {
+  font-family: "Chelsea Market", cursive;
+  background-color: rgb(102, 51, 0, 0.4);
+}
+
+#title, #description {
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.labels, input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#name, #email, #number, #dropdown {
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 8px;
+  border-color: rgb(102, 51, 0, 0.4);
+}
+
+#comment {
+  width: 95%;
+  border-radius: 8px;
+  border-color: rgb(102, 51, 0, 0.4);
+}
+
+#submit {
+  padding: 5px;
+  border-radius: 8px;
+  min-width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Chelsea Market", cursive;
+  font-size: 1.25em;
+  background-color: rgb(255, 255, 255);
+}
+
+#submit:hover, #submit:active {
+  background-color: rgb(255, 128, 0);
+}

@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coffee Survey</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
+  <header>
     <h1 id="title"> Coffee Survey</h1>
     <p id="description">Survey for coffee lovers.</p>
+  </header>
+  <main class="container">
     <form id="survey-form" autocomplete="on" action="index.html" method="post">
       <!-- NAME -->
       <div class="labels">
@@ -33,7 +36,7 @@
         <label for="number" id="number-label">Age:</label>
       </div>
       <div class="responses">
-        <input type="number" id="number" name="age" min="1" max="130" placeholder="Your age" required>
+        <input type="number" id="number" name="age" min="1" max="130" placeholder="Enter your age" required>
       </div>
       <!-- DROPDOWN (how many cups) -->
       <div class="labels">
@@ -52,7 +55,7 @@
       </div>
       <!-- CHECKBOXES (period of day)-->
       <div class="labels">
-        <label>When do your usually drink coffee:</label>
+        <label>Tell us more about yourself or about your coffee passion:</label>
       </div>
       <div class="responses">
         <label><input type="checkbox" name="period" value="Morning">Morning</label> <br>
@@ -83,9 +86,14 @@
         <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
       </div>
       <!-- SUBMIT BUTTON -->
-      <button type="submit" name="submitBtn">Submit</button>
+      <div class="button">
+        <button id="submit" type="submit" name="submitBtn">Submit</button>
+      </div>
     </form>
-  </div>
+  </main>
+  <footer>
+    <p>© coded by Hana Klingová</p>
+  </footer>
 </body>
 
 </html>
