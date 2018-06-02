@@ -6,10 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coffee Survey</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+  <div class="container">
+    <h1 id="title"> Coffee Survey</h1>
+    <p id="description">Survey for coffee lovers.</p>
+    <form id="survey-form" autocomplete="on" action="index.html" method="post">
+      <!-- NAME -->
+      <div class="labels">
+        <label for="name" id="name-label">Full name:</label>
+      </div>
+      <div class="responses">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <!-- EMAIL -->
+      <div class="labels">
+        <label for="email" id="email-label">E-mail:</label>
+      </div>
+      <div class="responses">
+        <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+      </div>
+      <!-- NUMBER (age) -->
+      <div class="labels">
+        <label for="number" id="number-label">Age:</label>
+      </div>
+      <div class="responses">
+        <input type="number" id="number" name="age" min="1" max="130" placeholder="Your age" required>
+      </div>
+      <!-- DROPDOWN (how many cups) -->
+      <div class="labels">
+        <label for="dropdown">How many cups of coffee do you usually drink per day:</label>
+      </div>
+      <div class="responses">
+        <select class="cups" id="dropdown" name="cups">
+          <option disabled value>select what applies</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="more">more than 5</option>
+        </select>
+      </div>
+      <!-- CHECKBOXES (period of day)-->
+      <div class="labels">
+        <label>When do your usually drink coffee:</label>
+      </div>
+      <div class="responses">
+        <label><input type="checkbox" name="period" value="Morning">Morning</label> <br>
+        <label><input type="checkbox" name="period" value="Afternoon">Afternoon</label> <br>
+        <label><input type="checkbox" name="period" value="Evening">Evening</label> <br>
+        <label><input type="checkbox" name="period" value="Night">Night</label> <br>
+      </div>
+      <!-- RADIO BUTTONS (favourite) -->
+      <div class="labels">
+        <label>What is your favourite coffee drink?</label>
+      </div>
+      <div class="responses">
+        <label><input type="radio" name="favourite" value="espresso" required>Espresso </label> <br>
+        <label><input type="radio" name="favourite" value="ristretto">Ristretto </label> <br>
+        <label><input type="radio" name="favourite" value="americano">Americano </label> <br>
+        <label><input type="radio" name="favourite" value="latte">Café Latte </label> <br>
+        <label><input type="radio" name="favourite" value="cappuccino">Cappuccino </label> <br>
+        <label><input type="radio" name="favourite" value="macchiato">Macchiato </label> <br>
+        <label><input type="radio" name="favourite" value="mocha">Mocha </label> <br>
+        <label><input type="radio" name="favourite" value="flatwhite">Flat White </label> <br>
+        <label><input type="radio" name="favourite" value="other">Other </label> <br>
+      </div>
+      <!-- TEXTAREA (comments)-->
+      <div class="labels">
+        <label for="comment">Let us know more about what do you like about coffee:</label>
+      </div>
+      <div class="responses">
+        <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+      </div>
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" name="submitBtn">Submit</button>
+    </form>
+  </div>
 </body>
 
 </html>
