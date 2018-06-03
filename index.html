@@ -13,12 +13,13 @@
 <body>
   <main class="container">
     <h1 id="title"> Coffee Survey</h1>
-    <p id="description">Survey for coffee lovers.</p>
+    <p id="description">Survey for coffee lovers. <br> <span class="info">(Items mark with * are mandatory.)</span>
+    </p>
     <form id="survey-form" autocomplete="on">
       <!-- NAME -->
       <div class="section">
         <div class="labels">
-          <label for="name" id="name-label">Full name:</label>
+          <label for="name" id="name-label">*Full name:</label>
         </div>
         <div class="responses">
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -27,7 +28,7 @@
       <!-- EMAIL -->
       <div class="section">
         <div class="labels">
-          <label for="email" id="email-label">E-mail:</label>
+          <label for="email" id="email-label">*E-mail:</label>
         </div>
         <div class="responses">
           <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
@@ -36,7 +37,7 @@
       <!-- NUMBER (age) -->
       <div class="section">
         <div class="labels">
-          <label for="number" id="number-label">Age:</label>
+          <label for="number" id="number-label">*Age:</label>
         </div>
         <div class="responses">
           <input type="number" id="number" name="age" min="1" max="130" placeholder="Enter your age" required>
@@ -74,7 +75,7 @@
       <!-- RADIO BUTTONS (favourite) -->
       <div class="section">
         <div class="labels">
-          <label>What is your favourite coffee drink?</label>
+          <label>*What is your favourite coffee drink?</label>
         </div>
         <div class="responses">
           <label class="tag"><input type="radio" name="favourite" value="espresso" required>Espresso </label> <br>
@@ -91,7 +92,7 @@
       <!-- TEXTAREA (comments)-->
       <div class="section">
         <div class="labels">
-          <label for="comment">Let us know more about what do you like about coffee:</label>
+          <label for="comment">Let us know more about yourself and your coffee habits:</label>
         </div>
         <div class="responses">
           <textarea id="comment" name="comment" rows="5" cols="50"></textarea>

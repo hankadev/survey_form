@@ -17,6 +17,18 @@ body {
   margin: 0;
 }
 
+#title {
+  padding-top: 15px;
+}
+
+#description {
+  padding-bottom: 15px;
+}
+
+.info {
+  font-size: 0.75em;
+}
+
 footer {
   text-align: center;
   font-size: 0.75em;
