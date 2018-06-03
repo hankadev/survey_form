@@ -53,6 +53,7 @@ footer {
 
 #submit {
   padding: 5px;
+  border: 1px solid var(--white);
   border-radius: 8px;
   min-width: 150px;
   display: block;
@@ -65,6 +66,11 @@ footer {
 
 #submit:hover, #submit:active {
   background-color: var(--orange);
+  cursor: pointer;
+}
+
+input:hover, #dropdown:hover, .tag:hover, #comment:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
