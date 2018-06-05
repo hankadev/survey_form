@@ -1,11 +1,13 @@
 :root {
+  --my-font: "Chelsea Market", cursive;
   --bg-color: #a67b5b;
   --white: #ffffff;
   --orange: #ff8000;
+  --dark-brown: #663300;
 }
 
 body {
-  font-family: "Chelsea Market", cursive;
+  font-family: var(--my-font);
   background-color: var(--bg-color);
   box-sizing: border-box;
   margin: 0;
@@ -63,7 +65,12 @@ footer {
   box-sizing: border-box;
 }
 
-#submit {
+input::placeholder, textarea::placeholder, option {
+  font-family: var(--my-font);
+  padding-left: 5px;
+}
+
+#submit, #newForm {
   padding: 5px;
   border: 1px solid var(--white);
   border-radius: 8px;
@@ -78,6 +85,42 @@ footer {
 
 #submit:hover, #submit:active {
   background-color: var(--orange);
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: var(--white);
+}
+
+.modalMessage {
+  position: fixed;
+  top: 30%;
+  width: 300px;
+  left: calc(50% - 150px);
+  font-size: 2em;
+  color: var(--dark-brown);
+  text-align: center;
+}
+
+#newForm {
+  font-size: 0.75em;
+  background-color: var(--dark-brown);
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 8px;
+}
+
+#newForm:hover, #newForm:active {
+  background-color: var(--white);
+  color: var(--dark-brown);
+  border: 1px solid var(--dark-brown);
   cursor: pointer;
 }
 
