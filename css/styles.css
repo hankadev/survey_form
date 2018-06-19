@@ -1,6 +1,6 @@
 :root {
   --my-font: "Chelsea Market", cursive;
-  --bg-color: #a67b5b;
+  --bg-color: #c1a28b;
   --white: #ffffff;
   --orange: #ff8000;
   --dark-brown: #663300;
@@ -68,6 +68,10 @@ footer {
 input::placeholder, textarea::placeholder, option {
   font-family: var(--my-font);
   padding-left: 5px;
+}
+
+.button {
+  padding-bottom: 2em;
 }
 
 #submit, #newForm {
