@@ -3,7 +3,7 @@ This is my implementation of [Free Code Camp's](https://www.freecodecamp.org/) S
 
 Project is build using HTML, CSS. Responsiveness is achieved by media queries and Flexbox.
 
-[view in browser](https://hanny21.github.io/survey_form/)
+[view in browser](https://hankadev.github.io/survey_form/)
 
 ## Objective
 Built an app that is functionally similar to [this](https://codepen.io/freeCodeCamp/full/VPaoNP/).
